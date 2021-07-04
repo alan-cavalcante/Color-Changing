@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --Verde1: #31793B;
+    --Amarelo1: #E5D357;
+    --Vermelho1: #D94848;
+    --Rosa1: #E29780;
+    --Rosa2: #F1E3E3;
+}
+
+body {
+    background-color: var(--Rosa2);
+    height: 100%;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 35px;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 
+    0px 5px 0px 0px #31793B,
+    0px 10px 0px 0px #D94848,
+    0px 15px 0px 0px #E29780,
+    0px 20px 0px 0px #E5D357;
+}
+
+#titulo {
+    color: var(--Vermelho1);
+    font-weight: 900;
+}
+
+#titulo p {
+    font-size: 2.5rem;
+}
+
+#info {
+    font-size: 1.6rem;
+    margin-left: 30px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    
+    /* padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%; */
+}
+
+#container-controles {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    min-width: 200px;
+    border: 5px solid #E5D357;
+    margin: 5%;
+}
+
+#container-quadro {
+    background-color: white;
+    width: 100%;
+    margin-left: 30px;
+    border: 5px solid #E5D357;
+    margin: 5%;
+    height: auto;
+}
+
+footer {
+    background-color: #D94848;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 625px) {
+    header {
+        flex-direction: column;
+    }
+}
