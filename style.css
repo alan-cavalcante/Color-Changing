@@ -60,8 +60,6 @@ main {
     display: flex;
     flex-direction: row;
     height: 100%;
-
-    
     /* padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%; */
@@ -74,6 +72,67 @@ main {
     min-width: 200px;
     border: 5px solid #E5D357;
     margin: 5%;
+    padding: 10px;
+}
+
+#controladores {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+#listaCorBase {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10px 45px 10px;
+    align-items: center;
+}
+
+#listaCorBase li {
+    font-weight: bold;
+}
+
+#listaCorBase input {
+    background-color: #E29780;
+    border: 0;
+    padding: 2px;
+    border-radius: 2px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+#listaIncremento {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10px 45px 10px;
+}
+
+#listaIncremento li {
+    font-weight: bold;
+}
+
+#listaIncremento input {
+    background-color: #E29780;
+    border: 0;
+    padding: 2px;
+    border-radius: 2px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+#startStop {
+    background-color: var(--Vermelho1);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 #container-quadro {
@@ -92,6 +151,7 @@ footer {
     bottom: 0;
     color: white;
     font-weight: bold;
+    padding: 5px;
 }
 
 @media (max-width: 625px) {

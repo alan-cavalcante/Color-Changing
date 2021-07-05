@@ -27,15 +27,21 @@
         <div id="container-main">
             <div id="container-controles">
                 <div id="controladores">
+                    <p>Insira valores pares HEX nos quadros abaixo.</p>
+                    <p>Valores HEX vão de <b>0-9</b> e <b>A-F</b>.</p>
+                    <hr style="width: 100%; margin: 2px 0px 2px 0px;">
+                    <p>Ex: <b> 0F 12 F8 </b> gera uma cor Azul</p>
                     <ul id="listaCorBase">
-                        <li>Valor de R <input type="text" class="inputsiniciais" name="" id="rgbR"></li>
-                        <li>Valor de G <input type="text" class="inputsiniciais" name="" id="rgbG"></li>
-                        <li>Valor de B <input type="text" class="inputsiniciais" name="" id="rgbB"></li>
+                        <li>R<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbR"></li>
+                        <li>G<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbG"></li>
+                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbB"></li>
                     </ul>
+                    <p>Insira os valores que serão incrementados à animação.</p>
+                    <hr style="width: 100%; margin: 2px 0px 2px 0px;">
                     <ul id="listaIncremento">
-                        <li>Incremento de R <input type="text" class="inputsiniciais" name="" id="increR"></li>
-                        <li>Incremento de G <input type="text" class="inputsiniciais" name="" id="increG"></li>
-                        <li>Incremento de B <input type="text" class="inputsiniciais" name="" id="omcreB"></li>
+                        <li>R<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increR"></li>
+                        <li>G<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increG"></li>
+                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="omcreB"></li>
                     </ul>
                 </div>
                 <button id="startStop">Start</button>
