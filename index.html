@@ -27,7 +27,7 @@
         <div id="container-main">
             <div id="container-controles">
                 <div id="controladores">
-                    <p>Insira valores pares HEX nos quadros abaixo.</p>
+                    <p>Insira pares de valores HEX nos quadros abaixo.</p>
                     <p>Valores HEX vão de <b>0-9</b> e <b>A-F</b>.</p>
                     <hr style="width: 100%; margin: 2px 0px 2px 0px;">
                     <p>Ex: <b> 0F 12 F8 </b> gera uma cor Azul</p>
@@ -41,19 +41,19 @@
                     <ul id="listaIncremento">
                         <li>R<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increR"></li>
                         <li>G<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increG"></li>
-                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="omcreB"></li>
+                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increB"></li>
                     </ul>
                 </div>
-                <button id="startStop">Start</button>
+                <button id="startStop" onclick="gerarCor(), animar(), readdonly()">Start</button>
             </div>
             <div id="container-quadro">
                 <div id="quadrocolorido"></div>
             </div>
         </div>
     </main>
-    <footer>
-        <p>Desenvolvido por <a href="https://github.com/alan-cavalcante">Alan Cavalcante</a></p>
-    </footer>
 </body>
+<footer>
+    <p>Desenvolvido por <a href="https://github.com/alan-cavalcante">Alan Cavalcante</a></p>
+</footer>
 
 </html>

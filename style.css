@@ -14,11 +14,12 @@
     --Vermelho1: #D94848;
     --Rosa1: #E29780;
     --Rosa2: #F1E3E3;
+    --CorAnimation1: #000000;
+    --CorAnimation2: #111111;
 }
 
 body {
     background-color: var(--Rosa2);
-    height: 100%;
 }
 
 header {
@@ -60,9 +61,7 @@ main {
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%; */
+    justify-content: center;
 }
 
 #container-controles {
@@ -73,6 +72,7 @@ main {
     border: 5px solid #E5D357;
     margin: 5%;
     padding: 10px;
+    max-width: 400px;
 }
 
 #controladores {
@@ -135,6 +135,10 @@ main {
     margin-bottom: 20px;
 }
 
+#startStop:hover {
+    background-color: red;
+}
+
 #container-quadro {
     background-color: white;
     width: 100%;
@@ -142,12 +146,31 @@ main {
     border: 5px solid #E5D357;
     margin: 5%;
     height: auto;
+    max-width: 400px;
+    padding: 10px;
 }
+
+#quadrocolorido {
+    height: 100%;
+}
+
+.animar {
+    animation-name: mudarbg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mudarbg {
+    0% {background-color: var(--CorAnimation1);}
+    100% {background-color: var(--CorAnimation2);}
+}
+
 
 footer {
     background-color: #D94848;
-    position: absolute;
     width: 100%;
+    position: fixed;
     bottom: 0;
     color: white;
     font-weight: bold;
@@ -158,4 +181,19 @@ footer {
     header {
         flex-direction: column;
     }
+    
+    #info {
+        font-size: 1.0rem;
+        margin-left: 0px;
+    }
+
+    #titulo {
+        color: var(--Vermelho1);
+        font-weight: 900;
+    }
+    
+    #titulo p {
+        font-size: 1.5rem;
+    }
+
 }
