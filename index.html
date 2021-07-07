@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title>Color-changing Box</title>
+    <title>Color-Cycle Box</title>
 </head>
 
 <body>
     <header>
         <div id="titulo">
-            <p>Color-changing Box</p>
+            <p>Color-Cycle Box</p>
         </div>
         <div id="info">
             <p>Projeto de treinamento baseado nas sugestões de ideias contidas em:
@@ -31,18 +31,28 @@
                     <p>Valores HEX vão de <b>0-9</b> e <b>A-F</b>.</p>
                     <hr style="width: 100%; margin: 2px 0px 2px 0px;">
                     <p>Ex: <b> 0F 12 F8 </b> gera uma cor Azul</p>
-                    <ul id="listaCorBase">
-                        <li>R<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbR"></li>
-                        <li>G<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbG"></li>
-                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="rgbB"></li>
-                    </ul>
-                    <p>Insira os valores que serão incrementados à animação.</p>
-                    <hr style="width: 100%; margin: 2px 0px 2px 0px;">
-                    <ul id="listaIncremento">
-                        <li>R<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increR"></li>
-                        <li>G<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increG"></li>
-                        <li>B<input type="text" maxlength="2" size="2" class="inputsiniciais" name="" id="increB"></li>
-                    </ul>
+                    <form action="">
+                        <ul id="listaCorBase">
+                            <li>R<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="rgbR"></li>
+                            <li>G<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="rgbG"></li>
+                            <li>B<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="rgbB"></li>
+                        </ul>
+                        <p>Insira os valores que serão incrementados à animação.</p>
+                        <ul id="listaIncremento">
+                            <li>R<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="increR"></li>
+                            <li>G<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="increG"></li>
+                            <li>B<input required type="text" maxlength="2" autocomplete="off" onchange="checarRegEx(this.value, this.id)"
+                                    size="2" class="inputsiniciais" id="increB"></li>
+                        </ul>
+                        <ul id="listavelocidade">
+                            <li>Insira a velocidade da animação em segundos. Ex: <b>2s</b>, <b>.25s</b> <input type="text" size="2" class="inputsiniciais" id="velocidade"></li>
+                        </ul>
+                    </form>
                 </div>
                 <button id="startStop" onclick="gerarCor(), animar(), readdonly()">Start</button>
             </div>
